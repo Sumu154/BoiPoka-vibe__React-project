@@ -1,9 +1,15 @@
 import React from 'react';
+import NavBar from './NavBar';
+import { Outlet } from 'react-router-dom';
+import Footer from './Footer';
+
 
 const Root = () => {
   return (
-    <div>
-      <h3> Hello from root </h3>
+    <div className="w-[90%] mx-auto">
+      <NavBar></NavBar>
+      <Outlet></Outlet>
+      <Footer></Footer>
     </div>
   );
 };
